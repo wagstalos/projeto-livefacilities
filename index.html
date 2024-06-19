@@ -15,14 +15,15 @@
   <link rel="stylesheet" href="./css/main.css" />
   <title>Live Facilities</title>
 </head>
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+
 
 <body>
   <div id="particles-js"></div>
   <header>
     <div class="container">
       <a href="#" class="logo">
-        <img src="https://www.livefacilities.com.br/img/logo.png" alt="Logo 6c" width="250px" />
+        <img src="https://www.livefacilities.com.br/img/logo.png" alt="Logo livefacilities" width="222px"
+          title="livefacilities" height="100px" />
       </a>
       <nav>
         <ul>
@@ -44,7 +45,7 @@
 
     <!-- menu mobile -->
     <div>
-      <!-- mobile menu -->
+      <!-- mobile dots -->
       <div class="dots">
 
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category" width="28" height="28"
@@ -96,9 +97,11 @@
         </ul>
 
         <div class="icons-mobile">
-          <a aria-label="link" href="https://www.linkedin.com/in/live-facilities-1a5492199/" target="_blank">
+          <a aria-label="link" href="https://www.linkedin.com/in/live-facilities-1a5492199/" target="_blank"
+            title="linkedin">
+
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44"
-              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33303e" fill="none" stroke-linecap="round"
+              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
               stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
@@ -107,11 +110,13 @@
               <path d="M12 16l0 -5" />
               <path d="M16 16v-3a2 2 0 0 0 -4 0" />
             </svg>
+
           </a>
 
-          <a aria-label="link" href="https://www.instagram.com/livefacilities/?hl=pt-br" target="_blank">
+          <a aria-label="link" href="https://www.instagram.com/livefacilities/?hl=pt-br" target="_blank"
+            title="facebook">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44"
-              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33303e" fill="none" stroke-linecap="round"
+              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
               stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
@@ -120,9 +125,9 @@
             </svg>
           </a>
 
-          <a aria-label="link" href="https://www.facebook.com/livefacilities" target="_blank">
+          <a aria-label="link" href="https://www.facebook.com/livefacilities" target="_blank" title="facebook">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44"
-              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33303e" fill="none" stroke-linecap="round"
+              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
               stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
@@ -138,21 +143,15 @@
 
   <div class="s-hero">
     <div class="container">
-      <div class="text">
-        <div class="lead" data-aos="fade-up" data-aos-duration="1500">
-          <span>Novo</span>
-          <p> #TeamLiveFacilities</p>
-        </div>
-
-        <h1 data-aos="fade-up" data-aos-duration="1700">
-
+      <div class="s-hero__text">
+        <span class="s-hero__text-tag"> #TeamLiveFacilities</span>
+        <h1 class="s-hero__text-title" data-aos="fade-up" data-aos-duration="1700">
           A vida do empreendimento em sua mãos
         </h1>
 
         <div data-aos="fade-up" data-aos-duration="1800">
           <h4 class="text-white mt-5">Administramos:</h4>
-
-          <p>
+          <p class="s-hero__text-description">
             <!-- Facilities -->
             Condomínios •
             Terceirizadas •
@@ -166,14 +165,12 @@
       </div>
     </div>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
 
   <script src="js/plugins.js"></script>
   <script src="js/all.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
 </body>
 
 </html>
