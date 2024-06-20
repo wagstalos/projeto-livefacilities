@@ -1,5 +1,6 @@
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-inline {
     font-family: "Montserrat", sans-serif;
     border-radius: $border-radius * 2;
     display: inline-block;
@@ -38,6 +39,19 @@
             background-color: rgba(255, 255, 255, 0.8);
             color: $brand-main;
         }
+    }
+}
+
+.btn-inline {
+    border: 1px solid $white;
+    color: $white;
+    
+    line-height: 4rem;
+
+    &:hover {
+        background-color: $white;
+        color: $brand-main;
+        transition: background-color 0.3s;
     }
 }
 
