@@ -1,0 +1,48 @@
+.container-list {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+
+.container-list:before,
+.container-list:after {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    content: "";
+    z-index: 1;
+}
+
+.container-list::before {
+    left: 0;
+    background: linear-gradient(to right, #fff 0%, transparent 100%);
+}
+
+.container-list::after {
+    right: 0;
+    background: linear-gradient(to left, #fff 0%, transparent 100%);
+}
+
+.wrapper {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25rem;
+
+    justify-items: stretch;
+    animation: scroll 10s linear infinite;
+    align-items: center;
+}
+
+@keyframes scroll {
+    to {
+        translate: calc(-4 * 25rem);
+    }
+}
+
+.line {
+    width: 100%;
+    border-top: 1px solid #e9f4f4;
+    margin-top: $gutter * 5;
+}

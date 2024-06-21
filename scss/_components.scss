@@ -2,6 +2,25 @@
     color: $white;
 }
 
+.text-gray-300 {
+    color: $gray-300;
+}
+
+.text-dark {
+    color: $brand-black;
+}
+
+.color-blue {
+    color: $brand-blue-light;
+}
+
+.color-main {
+    color: $brand-main;
+}
+
+.text-center {
+    text-align: center;
+}
 canvas {
     display: block;
     vertical-align: bottom;
@@ -18,6 +37,10 @@ canvas {
     background-position: 50% 50%;
     z-index: 1;
 } /* ---- stats.js ---- */
+
+.d-flex {
+    display: flex;
+}
 
 /* Classes para margin */
 .mt-1 {

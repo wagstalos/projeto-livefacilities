@@ -7,7 +7,6 @@ function menuMobile() {
   dotsButton.on("click", function () {
     menuMobile.slideDown();
     closeIcon.css("display", "block");
-
   });
 
   closeIcon.on("click", function () {
