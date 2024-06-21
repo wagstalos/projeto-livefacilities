@@ -1,8 +1,97 @@
 .s-afo {
-    height: 500px;
+    padding: 90px 0;
     background: linear-gradient(-90deg, rgba(5, 23, 30, 0) 10%, rgba(0, 54, 75, 0.76) 60%, rgba(5, 23, 30, 1) 99.93%),
         linear-gradient(rgba(5, 23, 30, 0) 10%, rgba(5, 23, 30, 0.8) 90%, rgba(5, 23, 30, 0.86) 99.93%),
         url(../img/BannerDefault.jpg);
     background-repeat: no-repeat;
     background-position: right;
+    background-size: cover;
+
+    &__title {
+        max-width: 288px;
+        font-weight: 500;
+    }
+
+    .d-flex {
+        justify-content: space-around;
+    }
+
+    .cardContainer {
+        // width: fit-content;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h4 {
+        color: $brand-green-light;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        position: relative;
+        width: 270px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px 10px;
+        border-radius: 10px;
+        backdrop-filter: blur(30px);
+        background-color: rgba(65, 65, 65, 0.308);
+        border: 1px solid rgba(255, 255, 255, 0.089);
+        cursor: pointer;
+        color: $white;
+
+        h3 {
+            color: $white;
+            &::first-letter {
+                color: $brand-green-light;
+                font-size: 2.8rem; /* Exemplo de alteração do tamanho da fonte */
+                font-weight: bold; /* Exemplo de alteração do peso da fonte */
+            }
+        }
+
+        ul {
+            margin-top: $gutter * 2;
+
+            li {
+                font-size: 1.6rem;
+                margin-bottom: $gutter;
+                display: flex;
+                align-items: center;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 14px; /* Adjust width as needed */
+                    height: 14px; /* Adjust height as needed */
+                    background-image: url("../img/check.svg");
+                    background-size: contain; /* Ensure the image fits within the box */
+                    background-repeat: no-repeat;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    // tablet
+    @include responsive($tablet) {
+        &__title {
+            max-width: 100%;
+            font-weight: 500;
+            font-size: 2.8rem;
+
+            margin-bottom: $gutter * 4;
+        }
+        .d-flex {
+            flex-direction: column;
+        }
+
+        .card {
+            width: 90%;
+            margin-bottom: $gutter;
+            height: auto;
+        }
+    }
 }
