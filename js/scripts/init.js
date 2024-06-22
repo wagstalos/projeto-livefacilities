@@ -78,6 +78,36 @@ $(document).ready(function () {
       .slideUp(300);
   });
 
+  function dateCurrent() {
+    var today = new Date();
+    var day = today.getDate();
+    var month = today.getMonth(); // Os meses começam em 0
+    var year = today.getFullYear();
+
+    // Nomes dos meses em português
+    var months = [
+      "janeiro",
+      "fevereiro",
+      "março",
+      "abril",
+      "maio",
+      "junho",
+      "julho",
+      "agosto",
+      "setembro",
+      "outubro",
+      "novembro",
+      "dezembro",
+    ];
+
+    // Formata a data como "dd de mês de yyyy"
+    var formattedDate = day + " de " + months[month] + " de " + year;
+
+    // Define a data formatada no elemento HTML com id "date-current"
+    $("#js-date-current").text(formattedDate);
+  }
+
   scrollTarget();
-  showMore();
+  //showMore();
+  dateCurrent();
 });

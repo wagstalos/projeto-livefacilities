@@ -20,11 +20,10 @@
         gap: 10px;
 
         .card {
-            // width: 32%;
             flex: 1;
             color: $white;
             height: 530px;
-            padding: 20px; /* Replace $gutter with an actual value */
+            padding: 20px;
 
             display: flex;
             flex-direction: column;
@@ -33,7 +32,7 @@
             background-repeat: no-repeat;
             background-position: 0px -67px;
             background-size: cover;
-            position: relative; /* Required for positioning the ::after element */
+            position: relative;
             overflow: hidden;
             z-index: 10;
             transition: all 1s ease;
@@ -54,7 +53,7 @@
             }
 
             &:hover {
-                flex: 2;
+                flex: 1.2;
             }
 
             &.img1 {

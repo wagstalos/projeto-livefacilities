@@ -63,7 +63,6 @@ footer {
         margin-top: $gutter * 8;
         position: relative;
         border-top: 1px solid #525252;
-        // background: radial-gradient(circle at 50% 72%, #242f67 0, #160438 55%);
         background-color: #0d0f11;
 
         .btn-top {
@@ -126,7 +125,6 @@ footer {
     @include responsive(500px) {
         .credits {
             z-index: 11;
-            background-color: red;
         }
     }
 }
