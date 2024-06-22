@@ -1,0 +1,42 @@
+.s-help {
+    padding: 90px 0;
+    background-color: rgba(241, 240, 245, 0.55);
+
+    h2 {
+        margin-bottom: $gutter * 4;
+        text-align: center;
+    }
+    .d-flex {
+        flex-wrap: wrap;
+        h4 {
+            margin-bottom: $gutter * 3;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__card {
+        width: calc(50% - 20px);
+        background-color: #e8e8e8;
+        padding: 20px;
+        margin: 20px 0 0 20px;
+        border-radius: 20px;
+    }
+
+    @include responsive($mobile) {
+        .d-flex {
+            flex-direction: column;
+        }
+        &__card {
+            width: 100%;
+            background-color: #e8e8e8;
+            padding: 20px;
+            margin: 0;
+            margin-bottom: $gutter * 3;
+            border-radius: 20px;
+        }
+    }
+}
