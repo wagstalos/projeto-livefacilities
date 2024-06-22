@@ -65,6 +65,49 @@ $(document).ready(function () {
     });
   }
 
+  $(".accordion-wrap").on("click", function () {
+    $(this).children().eq(1).slideToggle(300);
+    $(this).children().eq(0).toggleClass("accordion-no-bar");
+    $(this).siblings().find(".accordion-header").removeClass("accordion-gold");
+    $(this).siblings().find(".accordion-header .icon").removeClass("rotate-fa");
+    $(this).find(".accordion-header").toggleClass("accordion-gold");
+    $(this).find(".icon").toggleClass("rotate-fa");
+
+    $(".accordion-wrap .accordion-text")
+      .not($(this).children().eq(1))
+      .slideUp(300);
+  });
+
+  function dateCurrent() {
+    var today = new Date();
+    var day = today.getDate();
+    var month = today.getMonth(); // Os meses começam em 0
+    var year = today.getFullYear();
+
+    // Nomes dos meses em português
+    var months = [
+      "janeiro",
+      "fevereiro",
+      "março",
+      "abril",
+      "maio",
+      "junho",
+      "julho",
+      "agosto",
+      "setembro",
+      "outubro",
+      "novembro",
+      "dezembro",
+    ];
+
+    // Formata a data como "dd de mês de yyyy"
+    var formattedDate = day + " de " + months[month] + " de " + year;
+
+    // Define a data formatada no elemento HTML com id "date-current"
+    $("#js-date-current").text(formattedDate);
+  }
+
   scrollTarget();
-  showMore();
+  //showMore();
+  dateCurrent();
 });

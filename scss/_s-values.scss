@@ -1,8 +1,9 @@
-.s-valores {
+.s-values {
     padding: 90px 0;
 
     .headline {
         justify-content: space-between;
+        align-items: center;
 
         &__title {
             max-width: 30%;
@@ -17,12 +18,14 @@
         display: flex;
         margin-top: 50px;
         justify-content: space-around;
+        gap: 10px;
 
         .card {
-            width: 32%;
+            flex: 1;
             color: $white;
             height: 530px;
-            padding: 20px; /* Replace $gutter with an actual value */
+            padding: 20px;
+            border-radius: $border-radius;
 
             display: flex;
             flex-direction: column;
@@ -31,12 +34,10 @@
             background-repeat: no-repeat;
             background-position: 0px -67px;
             background-size: cover;
-            position: relative; /* Required for positioning the ::after element */
+            position: relative;
             overflow: hidden;
             z-index: 10;
-            transition:
-                transform 0.3s ease,
-                width 0.3s ease;
+            transition: all 1s ease;
 
             .more-text {
                 display: none;
@@ -53,20 +54,20 @@
                 }
             }
 
-            // &:hover {
-            //     transform: scale(1.1);
-            // }
+            &:hover {
+                flex: 1.2;
+            }
 
             &.img1 {
-                background-image: url("/img/img1.jpg");
+                background-image: url("/img/img1.webp");
             }
 
             &.img2 {
-                background-image: url("/img/img2.png");
+                background-image: url("/img/img2.webp");
             }
 
             &.img3 {
-                background-image: url("/img/img3.jpg");
+                background-image: url("/img/img3.webp");
             }
 
             h3,
@@ -111,6 +112,11 @@
                 width: 100%;
                 margin-bottom: $gutter * 3;
                 height: 400px;
+                flex: none;
+
+                &:hover {
+                    flex: none;
+                }
             }
         }
     }

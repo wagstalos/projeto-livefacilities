@@ -1,0 +1,100 @@
+.s-financial {
+    padding: 90px 0;
+    position: relative;
+
+    background: #041020 url(../img/bg-financial.webp) no-repeat right top;
+    background-size: contain;
+    .headline {
+        justify-content: space-between;
+        align-items: center;
+
+        &__title {
+            max-width: 40%;
+            font-weight: 400;
+        }
+        &__subtitle {
+            max-width: 50%;
+            line-height: 140%;
+        }
+    }
+
+    &__text {
+        width: 100%;
+        .mySwiper {
+            position: relative;
+            margin-top: 100px;
+            padding: 20px;
+
+            :root {
+                --swiper-navigation-size: 15px;
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                // position: relative;
+                // top: 8% !important;
+                background-color: #ffffff;
+                padding: 16px;
+                border-radius: 50px;
+                color: $brand-green-light;
+                border: 1px solid $brand-main;
+
+                &:hover {
+                    background-color: $brand-main;
+                    color: $white;
+                }
+            }
+            .swiper-pagination-bullet {
+                background: #fff;
+            }
+            .swiper-pagination-bullet-active {
+                background: $brand-green-light;
+            }
+            .swiper-horizontal > .swiper-pagination-bullets,
+            .swiper-pagination-bullets.swiper-pagination-horizontal,
+            .swiper-pagination-custom,
+            .swiper-pagination-fraction {
+                bottom: 0;
+            }
+        }
+        .card {
+            height: auto;
+            // max-width: 300px;
+            border: 1px solid rgba(197, 190, 220, 0.1);
+            //  background-color: rgba(197, 190, 220, 0.1);
+            background: linear-gradient(129.19deg, #142236 70%, rgba(20, 34, 54, 0) 133.36%);
+            // background-color: rgba(241, 240, 245, 0.55);
+            background: rgb(0 0 0 / 17%);
+            backdrop-filter: blur(8.1rem);
+            padding: $gutter * 2;
+
+            border-radius: $border-radius * 2;
+            margin-right: 10px;
+            overflow: auto;
+
+            p {
+                font-size: 1.6rem;
+                color: #d4d4d4;
+            }
+            h3 {
+                color: $white;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    @include responsive($tablet) {
+        .headline {
+            flex-direction: column;
+            &__title {
+                max-width: 100%;
+                font-size: 2.8rem;
+                margin-top: 20px;
+                margin-bottom: 2rem;
+            }
+            &__subtitle {
+                max-width: 100%;
+            }
+        }
+    }
+}
