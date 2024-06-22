@@ -3,9 +3,9 @@ var swiper2 = new Swiper(".mySwiper", {
   freeMode: false,
   slidesPerView: 1.1,
 
-  autoplay: {
-    delay: 5000, // tempo em milissegundos entre os slides
-  },
+  //   autoplay: {
+  //     delay: 15000, // tempo em milissegundos entre os slides
+  //   },
   loop: true,
   navigation: true,
   pagination: {

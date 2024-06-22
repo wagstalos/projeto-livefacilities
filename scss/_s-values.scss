@@ -3,6 +3,7 @@
 
     .headline {
         justify-content: space-between;
+        align-items: center;
 
         &__title {
             max-width: 30%;
@@ -24,6 +25,7 @@
             color: $white;
             height: 530px;
             padding: 20px;
+            border-radius: $border-radius;
 
             display: flex;
             flex-direction: column;
@@ -57,15 +59,15 @@
             }
 
             &.img1 {
-                background-image: url("/img/img1.jpg");
+                background-image: url("/img/img1.webp");
             }
 
             &.img2 {
-                background-image: url("/img/img2.png");
+                background-image: url("/img/img2.webp");
             }
 
             &.img3 {
-                background-image: url("/img/img3.jpg");
+                background-image: url("/img/img3.webp");
             }
 
             h3,
