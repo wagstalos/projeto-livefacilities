@@ -1,4 +1,4 @@
-.s-valores {
+.s-values {
     padding: 90px 0;
 
     .headline {
@@ -17,9 +17,11 @@
         display: flex;
         margin-top: 50px;
         justify-content: space-around;
+        gap: 10px;
 
         .card {
-            width: 32%;
+            // width: 32%;
+            flex: 1;
             color: $white;
             height: 530px;
             padding: 20px; /* Replace $gutter with an actual value */
@@ -34,9 +36,7 @@
             position: relative; /* Required for positioning the ::after element */
             overflow: hidden;
             z-index: 10;
-            transition:
-                transform 0.3s ease,
-                width 0.3s ease;
+            transition: all 1s ease;
 
             .more-text {
                 display: none;
@@ -53,9 +53,9 @@
                 }
             }
 
-            // &:hover {
-            //     transform: scale(1.1);
-            // }
+            &:hover {
+                flex: 2;
+            }
 
             &.img1 {
                 background-image: url("/img/img1.jpg");
@@ -111,6 +111,11 @@
                 width: 100%;
                 margin-bottom: $gutter * 3;
                 height: 400px;
+                flex: none;
+
+                &:hover {
+                    flex: none;
+                }
             }
         }
     }

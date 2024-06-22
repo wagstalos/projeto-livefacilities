@@ -1,5 +1,5 @@
 .s-about {
-    padding: 90px 0;
+    padding: 150px 0;
 
     .d-flex {
         justify-content: space-between;
@@ -59,6 +59,7 @@
 
     // tablet
     @include responsive($tablet) {
+        padding: 90px 0;
         .d-flex {
             flex-direction: column;
         }
@@ -66,13 +67,20 @@
         &__text {
             width: 100%;
 
-            h4 {
-                text-align: center;
+            // h4 {
+            //     text-align: center;
+            // }
+            &-title {
+                font-size: 2.2rem;
+                margin-bottom: $gutter * 5;
             }
         }
 
         &__img {
             width: 100%;
+            img {
+                margin: 0 auto;
+            }
         }
     }
 }
