@@ -1,8 +1,8 @@
 .s-hero {
     width: 100%;
-    height: 90vh;
+    // height: 90vh;
     background-color: $brand-main;
-    padding-top: 19.1rem;
+    padding-top: 17.1rem;
     padding-bottom: 10.1rem;
 
     background: linear-gradient(-90deg, rgba(5, 23, 30, 0) 50%, rgba(5, 23, 30, 0.76) 60%, rgba(5, 23, 30, 1) 99.93%),
@@ -17,10 +17,8 @@
     }
 
     .testimonial {
-        // position: absolute;
-
         width: 50%;
-        height: 180px;
+        height: auto;
         padding: 19px;
         border-radius: 5px;
         // right: 120px;
@@ -84,6 +82,7 @@
 
     //tablet
     @include responsive($tablet) {
+        background-size: cover;
         .d-flex {
             flex-direction: column;
         }
@@ -113,10 +112,10 @@
                 rgba(5, 23, 30, 0.76) 60%,
                 rgba(5, 23, 30, 1) 99.93%
             ),
-            linear-gradient(rgba(5, 23, 30, 0) 95%, rgba(5, 23, 30, 0.8) 60%, rgba(5, 23, 30, 0.86) 99.93%),
+            linear-gradient(rgba(5, 23, 30, 0) 5%, rgba(5, 23, 30, 0.8) 60%, rgba(5, 23, 30, 0.86) 99.93%),
             url(../img/hero.webp);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right 42% bottom -1%;
         background-size: cover;
 
         .testimonial {
