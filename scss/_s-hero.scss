@@ -1,7 +1,6 @@
 .s-hero {
     width: 100%;
     // height: 90vh;
-    background-color: $brand-main;
     padding-top: 17.1rem;
     padding-bottom: 10.1rem;
 
@@ -11,37 +10,15 @@
     background-repeat: no-repeat;
     background-position: right;
     // background-size: cover;
+    background-color: #0e2127;
 
     .d-flex {
         align-items: end;
-    }
-
-    .testimonial {
-        width: 50%;
-        height: auto;
-        padding: 19px;
-        border-radius: 5px;
-        // right: 120px;
-        bottom: 0;
-        backdrop-filter: blur(20px);
-        background: rgba(25, 25, 25, 0.6);
-        border-radius: 6px;
-        color: $white;
-
-        h5 {
-            margin-top: 10px;
-            font-size: 1.4rem;
-            max-width: 72%;
-        }
-
-        svg {
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
-        }
+        justify-content: space-between;
     }
 
     &__text {
+        width: 60%;
         margin-bottom: 3.9rem;
         position: relative;
         z-index: 2;
@@ -61,13 +38,18 @@
         }
 
         &-description {
-            max-width: 56.5rem;
+            max-width: 100%;
             font-family: $font-inter;
             margin-top: 1rem;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             font-size: 1.8rem;
             line-height: 150%;
             color: $white;
+        }
+
+        span {
+            font-size: 1.4rem;
+            font-weight: 600;
         }
 
         &-title {
@@ -78,8 +60,59 @@
             color: $white;
             max-width: 74rem;
         }
+
+        .btn-secondary {
+            margin-top: 70px;
+        }
     }
 
+    &__items {
+        width: 40%;
+        flex-wrap: wrap;
+
+        &-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+        }
+
+        .services {
+            width: calc(45% - 10px);
+            flex-wrap: wrap;
+            backdrop-filter: blur(20px);
+            background: rgba(25, 25, 25, 0.6);
+            border-radius: 6px;
+            color: $white;
+            margin: 5px;
+            padding: 8px;
+
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    @include responsive(1200px) {
+        background-size: cover;
+        .d-flex {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        &__text {
+            width: 100%;
+            &-title {
+                max-width: 100%;
+                padding: 20px;
+            }
+            &-btn {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
     //tablet
     @include responsive($tablet) {
         background-size: cover;
@@ -89,16 +122,23 @@
         &__text {
             text-align: center;
             &-title {
-                font-size: 4rem;
+                font-size: 3rem;
             }
             &-description {
                 max-width: 100%;
             }
         }
 
-        .testimonial {
-            display: relative;
+        &__items {
             width: 100%;
+            &-flex {
+                align-items: center;
+                justify-content: center;
+            }
+            .services {
+                display: relative;
+                width: 40%;
+            }
         }
     }
 
@@ -118,10 +158,20 @@
         background-position: right 42% bottom -1%;
         background-size: cover;
 
-        .testimonial {
-            position: relative;
-            width: 100%;
-            height: auto;
+        &__text {
+            &-title {
+                font-size: 3rem;
+                margin-top: 0;
+            }
+            &-description {
+                font-size: 1.6rem;
+            }
+        }
+        &__items {
+            .services {
+                display: relative;
+                width: 46%;
+            }
         }
     }
 }
