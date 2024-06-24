@@ -47,9 +47,20 @@
             color: $white;
         }
 
-        span {
+        .message {
             font-size: 1.4rem;
             font-weight: 600;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 25px;
+                height: 1px;
+                background-color: rgb(236, 236, 236);
+                top: 50%;
+                left: -10%;
+            }
         }
 
         &-title {
@@ -165,6 +176,10 @@
             }
             &-description {
                 font-size: 1.6rem;
+            }
+
+            .message {
+                max-width: 60%;
             }
         }
         &__items {
