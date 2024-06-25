@@ -6,7 +6,7 @@ var swiper2 = new Swiper(".mySwiper", {
   //   autoplay: {
   //     delay: 15000, // tempo em milissegundos entre os slides
   //   },
-  loop: true,
+  loop: false,
   navigation: true,
   pagination: {
     el: ".swiper-pagination",
