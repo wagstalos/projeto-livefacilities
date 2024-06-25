@@ -12,767 +12,109 @@
   <meta name="author" content="Wagner Silva">
   <meta name="keywords" content="Facilities, Condomínios , Terceirizadas, Sindicância, Sindicância">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="./css/plugins.css" />
   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="preload" as="image" href="./img/hero.webp">
   <title>Live Facilities</title>
 
 
 </head>
 
 
-<body>
-  <div id="particles-js"></div>
-  <header>
-    <div class="container">
-      <a href="#" class="logo">
-        <img src="https://www.livefacilities.com.br/img/logo.png" alt="Logo livefacilities" width="222px"
-          title="livefacilities" height="100px" />
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a aria-label="Quem somos" href="#quem-somos"> Quem somos</a>
-          </li>
-
-          <li>
-            <a href="#facilidades">Facilidades </a>
-          </li>
-          <li> <a href="#duvidas">Dúvidas </a>
-
-          </li>
-          <li> <a href="#contato">Contato </a>
-
-          </li>
-        </ul>
-      </nav>
-      <button class="btn-inline">PROPOSTA</button>
-    </div>
-
-    <!-- menu mobile -->
-    <div>
-      <!-- mobile dots -->
-      <div class="dots">
-
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category" width="28" height="28"
-          viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M4 4h6v6h-6z" />
-          <path d="M14 4h6v6h-6z" />
-          <path d="M4 14h6v6h-6z" />
-          <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-        </svg>
-      </div>
-
-      <div class="menu-mobile">
-        <div class="bg-dark"></div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-x" width="34" height="34"
-          viewBox="0 0 24 24" stroke-width="2" stroke="#453f51" fill="none" stroke-linecap="round"
-          stroke-linejoin="round" fill="#453f51">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M18 6l-12 12"></path>
-          <path d="M6 6l12 12"></path>
-        </svg>
-
-        <ul class="menu-mobile__links">
-          <li>
-            <a aria-label="link" href="#quem-somos">
-              <span>Quem somos</span>
-            </a>
-          </li>
-          <li>
-            <a aria-label="link" href="#facilidades">
-              <span>Facilidades</span>
-            </a>
-          </li>
-
-          <li class="btn-contrast">
-            <a aria-label="link" href="#duvidas">
-              <span>Dúvidas</span>
-            </a>
-          </li>
-
-
-          <li class="btn-contrast">
-            <a aria-label="link" href="#contato">
-              <span>Proposta</span>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="icons-mobile">
-          <a aria-label="link" href="https://www.linkedin.com/in/live-facilities-1a5492199/" target="_blank"
-            title="linkedin">
-
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44"
-              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-              <path d="M8 11l0 5" />
-              <path d="M8 8l0 .01" />
-              <path d="M12 16l0 -5" />
-              <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-            </svg>
-
-          </a>
-
-          <a aria-label="link" href="https://www.instagram.com/livefacilities/?hl=pt-br" target="_blank"
-            title="facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44"
-              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-              <path d="M16.5 7.5l0 .01" />
-            </svg>
-          </a>
-
-          <a aria-label="link" href="https://www.facebook.com/livefacilities" target="_blank" title="facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44"
-              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-            </svg>
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-  </header>
-  <!-- section hero -->
-  <section class="s-hero" id="about">
-    <div class="container">
-      <div class="d-flex">
-        <div class="s-hero__text">
-          <!-- <span class="s-hero__text-tag" data-aos="fade-up" data-aos-duration="1500"> Sejam bem-vindos(a)!</span> -->
-          <h1 class="s-hero__text-title" data-aos="fade-up" data-aos-duration="1700">
-            A vida do empreendimento em sua mãos
-          </h1>
-
-          <div class="text-white" data-aos="fade-up" data-aos-duration="1800">
-            <p class="s-hero__text-description">
-              "A ideia de uma única plataforma com todas as ferramentas necessárias, além de tecnologia de ponta, traz
-              um
-              grande diferencial para a gestão da nossa carteira. A equipe <b>liveFacilities</b> está sempre pronta para
-              solucionar
-              as dificuldades dos usuários e modelar as ferramentas de acordo com as nossas necessidades."
-            </p>
-
-            <span class="message color-green-light" style="float:right">Daniel Brandão | Gerente Financeiro Mario
-              Dal
-              Maso</span>
-          </div>
-
-          <div class="s-hero__text-btn">
-            <a class="btn-secondary white mt-5" data-aos="fade-up" data-aos-duration="1900">
-              Fale com um especialista
-            </a>
-          </div>
-
-
-        </div>
-
-        <div class="s-hero__items" data-aos="fade-down" data-aos-duration="1900">
-          <p class="text-white text-center mb-4">Administramos:</p>
-
-          <div class="s-hero__items-flex">
-            <div class="services">
-              <img class="mr-2" src="img/icon-facilities.svg" alt="facilities" width="40px">
-              <p>Facilities</p>
-            </div>
-            <div class="services">
-              <img class="mr-2" src="img/icon-terceirizados.svg" alt="terceirizados" width="40px">
-              <p>Terceirizadas</p>
-            </div>
-
-            <div class="services">
-              <img class="mr-2" src="img/icon-sindicancia.svg" alt="sindicancia" width="40px">
-              <p>Sindicância</p>
-            </div>
-            <div class="services">
-              <img class="mr-2" src="img/icon-condominios.svg" alt="condominios" width="40px">
-              <p>Condomínios</p>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- section sobre -->
-  <section class="s-about" id="quem-somos">
-    <div class="container">
-      <div class="d-flex">
-
-        <div class="s-about__text">
-          <h4 class="color-blue">Quem somos</h4>
-
-          <h3 class="s-about__text-title mt-5">Uma empresa de tecnologia, que busca através do <b
-              class="color-blue">software
-              liveFacilities</b>
-            desenvolver inovações para o seu
-            negócio.</h3>
-
-
-          <p class="s-about__text-description mt-5"> Com mais de 10 anos no mercado, Nosso diferencial é oferecer
-            resultados
-            positivos
-            com
-            um sistema único de gestão e automatizações, além de dedicar uma solução completa e integrada, tanto
-            financeira
-            como operacional.
-
-          <p class="mb-5 mt-5">
-            <span class="text-dark">Atuamos em 05 principais segmentos:</span>
-          </p>
-
+<body class="loading">
+  <div class="loader"></div>
+  <main class="content">
+    <div id="particles-js"></div>
+    <header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="https://www.livefacilities.com.br/img/logo.png" alt="Logo livefacilities" width="222" height="100"
+            title="livefacilities" height="100px" />
+        </a>
+        <nav>
           <ul>
-            <li>condomínios</li>
-            <li>empresas de
-              facilities</li>
-
-            <li>terceirizadas</li>
-            <li>administradoras</li>
-            <li>sindicâncias</li>
-          </ul>
-
-          </p>
-        </div>
-
-        <div class="s-about__img">
-          <img loading="lazy" src="img/company.svg" alt="company" title="company" data-aos="fade-up">
-        </div>
-
-
-      </div>
-    </div>
-
-    <div class="line"></div>
-    <div class="container">
-      <p class="mt-5 text-center mb-4 text-gray-300"><b>Empresas que confiam no nosso trabalho</b> </p>
-      <div class="container-list">
-        <div class="wrapper">
-          <img loading="lazy" class="img-partners"
-            src="https://www.livefacilities.com.br/img/section/clients/6.png?v=1.0" alt="" width="150">
-          <img loading="lazy" class="img-partners" src="./img/empresas/parceiro1.png" alt="tercera" title="tercera"
-            width="150">
-          <img loading="lazy" class="img-partners"
-            src="https://www.livefacilities.com.br/img/section/clients/1.png?v=1.0" alt="" width="150">
-          <img loading="lazy" class="img-partners" src="./img/empresas/parceiro2.png" alt="tercera" title="tercera"
-            width="150">
-
-
-          <img loading="lazy" class="img-partners"
-            src="https://www.livefacilities.com.br/img/section/clients/6.png?v=1.0" alt="" width="150">
-          <img loading="lazy" class="img-partners" src="./img/empresas/parceiro1.png" alt="tercera" title="tercera"
-            width="150">
-          <img loading="lazy" class="img-partners"
-            src="https://www.livefacilities.com.br/img/section/clients/1.png?v=1.0" alt="" width="150">
-          <img loading="lazy" class="img-partners" src="./img/empresas/parceiro2.png" alt="tercera" title="tercera"
-            width="150">
-
-
-        </div>
-
-      </div>
-    </div>
-
-  </section>
-
-  <!-- section AFO -->
-  <section class="s-afo">
-    <div class="container d-flex">
-      <div class="cardContainer first-card">
-        <h4>AFO</h4>
-        <h2 class="s-afo__title text-white ">Conheça nosso sistema operacional <strong>AFO</strong> </h2>
-      </div>
-
-
-      <div class="cardContainer">
-        <div class="card">
-          <h3 class="city">
-            Administrativo</h3>
-          <ul>
-            <li>Comunicação</li>
-            <li>Documentação</li>
-            <li>Contratos e seguros</li>
-            <li>Reservas e autorizações</li>
-            <li>Mensageria</li>
-            <li>Chaves e ferramentas</li>
-            <li>Assembleias</li>
-          </ul>
-
-
-        </div>
-      </div>
-
-      <div class="cardContainer">
-        <div class="card">
-          <h3 class="city">
-            Financeiro</h3>
-          <ul>
-            <li>Prever</li>
-            <li>Receber</li>
-            <li>Pagar</li>
-            <li>Cobrar</li>
-            <li>Prestar Contas</li>
-          </ul>
-
-
-        </div>
-      </div>
-
-      <div class="cardContainer">
-        <div class="card">
-          <h3 class="city">
-            Operacional</h3>
-          <ul>
-            <li>Preventivas</li>
-            <li>Corretivas
+            <li>
+              <a aria-label="Quem somos" href="#quem-somos"> Quem somos</a>
             </li>
-            <li>Checklist / Plano de trabalho</li>
-            <li>Disponibilidade X Tempo de parada</li>
-            <li>Performance de fornecedores</li>
-            <li>Facilities Monitor</li>
-            <li>Qrcode Facilities</li>
-            <li>Indicadores</li>
+
+            <li>
+              <a href="#facilidades">Facilidades </a>
+            </li>
+            <li> <a href="#duvidas">Dúvidas </a>
+
+            </li>
+            <li> <a href="#contato">Contato </a>
+
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-inline">PROPOSTA</button>
+      </div>
+
+      <!-- menu mobile -->
+      <div>
+        <!-- mobile dots -->
+        <div class="dots">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category" width="28" height="28"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 4h6v6h-6z" />
+            <path d="M14 4h6v6h-6z" />
+            <path d="M4 14h6v6h-6z" />
+            <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+          </svg>
+        </div>
+
+        <div class="menu-mobile">
+          <div class="bg-dark"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-x" width="34" height="34"
+            viewBox="0 0 24 24" stroke-width="2" stroke="#453f51" fill="none" stroke-linecap="round"
+            stroke-linejoin="round" fill="#453f51">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+
+          <ul class="menu-mobile__links">
+            <li>
+              <a aria-label="link" href="#quem-somos">
+                <span>Quem somos</span>
+              </a>
+            </li>
+            <li>
+              <a aria-label="link" href="#facilidades">
+                <span>Facilidades</span>
+              </a>
+            </li>
+
+            <li class="btn-contrast">
+              <a aria-label="link" href="#duvidas">
+                <span>Dúvidas</span>
+              </a>
+            </li>
+
+
+            <li class="btn-contrast">
+              <a aria-label="link" href="#contato">
+                <span>Proposta</span>
+              </a>
+            </li>
+
           </ul>
 
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- section valores -->
-  <section class="s-values">
-    <div class="container">
-      <h4 class="color-blue">Nossa missão</h4>
-
-      <div class="d-flex headline">
-        <h2 class="headline__title">
-          Desenvolvimento e <b>transparência</b> </h2>
-
-        <h4 class="headline__subtitle text-gray">Descubra nossa Missão, Visão e Valores
-        </h4>
-
-      </div>
-
-      <div class="cards">
-        <div class="card img1">
-          <h3 class="text-white">
-            MISSÃO
-          </h3>
-
-          <div class="card__bottom">
-            <img src="img/icon-missao.svg" alt="icon missão">
-            <h4 class="card__bottom-title mb-4 mt-4">Soluções</h4>
-            <p id="text" class="text-showmore">
-              Construir soluções tecnológicas que impactam positivamente o seu empreendimento.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="card img2">
-          <h3 class="text-white">
-            VISÃO
-          </h3>
-
-          <div class="card__bottom">
-            <img src="img/icon-gestao.svg" alt="icon gestão">
-            <h4 class="card__bottom-title mb-4 mt-4">Modelo de gestão</h4>
-            <p id="text" class="text-showmore">
-              Estabelecer com o liveFacilities um novo modelo de gestão para empreendimentos.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="card img3">
-          <h3 class="text-white">
-            VALORES
-          </h3>
-
-          <div class="card__bottom">
-            <img src="img/icon-valores.svg" alt="icon missão">
-            <h4 class="card__bottom-title mb-4 mt-4">Relacionamento</h4>
-            <p id="text" class="text-showmore">
-              Atuar com máxima segurança de nossos serviços e principalmente respeito e parceria com nossos clientes.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- section facilidades -->
-  <section class="s-facilidades" id="facilidades">
-    <div class="container">
-
-      <div class="d-flex flex-mobile">
-        <div class="s-facilidades__img mx-auto" data-aos="fade-right">
-          <!-- <p class="js-date-current" id="js-date-current">loadind..</p> -->
-          <img loading="lazy" src="img/app.png" alt="aplicativo liveFacilities" title="aplicativo liveFacilities">
-        </div>
-
-        <div class="s-facilidades__text" data-aos="fade-up">
-
-          <h4 class="mb-4 color-blue">Facilidades</h4>
-          <h2>Facilidade em <strong>suas mãos</strong> </h2>
-          <p class="s-facilidades__text-description">Com o nosso aplicativo, é possível fazer a gestão de todo o seu
-            <strong> empreendimento.</strong>
-          </p>
-
-
-          <div class="accordion-wrap mt-5">
-            <div class="d-flex">
-              <img class=" mr-4" src="img/icon-comodidade.svg" alt="icone comodidade">
-              <div class="accordion-item">
-                <h4 class="accordion-header"> Maior comodidade <img class=" icon rotate" src="img/polygon.svg" alt="">
-                </h4>
-
-              </div>
-            </div>
-
-            <div class="accordion-text" style="display: block;">
-              <p>Com o uso do app, você tem a comodidade de visualizar suas atividades em qualquer lugar, e com todas as
-                funcionalidades disponíveis no sistema.
-
-                Casos de sucesso envolvendo o nosso app, se voltam principalmente para as empresas de facilities, que
-                fazem avaliações de espaços, itens e equipamentos. Com a leitura do QR Code é possível abrir suas ordens
-                de serviço diretamente na tela, e com isso facilitar o gerenciamento do seu negócio e o trabalho dos
-                seus colaboradores. </p>
-            </div>
-          </div>
-
-
-          <div class="accordion-wrap">
-            <div class="d-flex">
-              <img class="mr-4" src="img/icon-praticidade.svg" alt="Praticidade">
-              <div class="accordion-item">
-                <h4 class="accordion-header"> Praticidade para o seu cliente <img class="icon rotate"
-                    src="img/polygon.svg" alt="polygon"> </h4>
-              </div>
-            </div>
-
-            <div class="accordion-text">
-              <p>Com o uso do app, além da comodidade você tem a praticidade de gerenciar e resolver suas atividades do
-                dia a dia.
-
-                Nossos casos de sucesso envolvendo a praticidade são principalmente com empresas administradoras de
-                condomínios. Onde, o condômino - cliente final - tem total acesso para verificar informações do seu
-                condomínio. Assim como: gerenciar sua posição financeira, fazer reservas de espaço, cadastrar seus
-                visitantes, veículos e funcionários. Com o cadastro destes no sistema, é possível fazer a integração com
-                o dispositivo e depois com um hardware para controle de acesso. </p>
-            </div>
-          </div>
-
-
-          <div class="accordion-wrap">
-            <div class="d-flex">
-              <img class="mr-4" src="img/icon-personalizado.svg" alt="personalizado" />
-              <div class="accordion-item">
-                <h4 class="accordion-header"> App personalizado de acordo com as suas necessidades <img
-                    class="icon rotate" src="img/polygon.svg" alt="polygon"> </h4>
-              </div>
-            </div>
-
-            <div class="accordion-text">
-              <p>O aplicativo da liveFacilities se adequa as suas necessidades. Pode-se dizer, portanto, que o mesmo
-                terá as funcionalidades essenciais para a gestão.
-
-                Cada detalhe é pensado exclusivamente para as facilidades do seu empreendimento, e para que todos que
-                fazem parte sintam-se pertencentes também ao sistema.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-  <!-- section financeiro -->
-  <section class="s-financial">
-
-    <div class="container">
-      <h4 class="mb-4 color-green-light">Financeiro</h4>
-
-      <div class="d-flex headline">
-        <h2 class="headline__title text-white">
-          Conheça nosso <strong> Processo Financeiro </strong></h2>
-
-        <h4 class="headline__subtitle text-white">Atividades repetitivas e manuais fazem parte da sua operação
-          financeira?
-          Automatizamos grande parte do processo.
-        </h4>
-      </div>
-
-    </div>
-    <div class="d-flex">
-      <div class="s-financial__text">
-
-        <div class="swiper mySwiper">
-
-          <div class="swiper-wrapper">
-
-            <div class="card swiper-slide ">
-              <h3 class="mb-4 "><b class="color-green-light">1.</b> Prever</h3>
-              <p>Nossa previsão orçamentária é integrada ao rateio e contas a pagar, garantindo aprovação e
-                justificativa de desvios. Oferecemos relatórios e indicadores para apoiar sua gestão e decisões.
-              </p>
-            </div>
-
-            <div class="card swiper-slide">
-              <h3 class="mb-4"><b class="color-green-light">2.</b> Receber</h3>
-              <p>Facilitamos o rateio de receitas, incluindo automaticamente valores de reservas e serviços pay per use.
-                A baixa de boletos é rápida devido à automatização bancária.</p>
-            </div>
-
-            <div class="card swiper-slide">
-              <h3 class="mb-4"><b class="color-green-light">3.</b> Pagar</h3>
-              <p>Nosso sistema de contas a pagar inclui: retenção e integração de tributos por fornecedor e município,
-                múltiplas configurações de workflow, validação de duplicidade com código de barras, integração com REINF
-                e medição de consumo, além de controle de débito automático.</p>
-            </div>
-
-            <div class="card swiper-slide">
-              <h3 class="mb-4"><b class="color-green-light">4.</b> Cobrar</h3>
-              <p>O liveFacilities melhora sua cobrança com e-mails personalizados, geração automática de acordos e
-                apontamentos jurídicos inteligentes. Oferecemos ferramentas de gestão, controle e relatórios.
-              </p>
-            </div>
-
-            <div class="card swiper-slide">
-              <h3 class="mb-4"><b class="color-green-light">5.</b> Prestar Contas</h3>
-              <p>Disponibilizamos um balancete online no formato de revista, promovendo a sustentabilidade ao eliminar
-                pastas impressas. Facilitamos a gestão de despesas e aprovação de períodos online.
-              </p>
-            </div>
-          </div>
-
-          <div class="swiper-pagination"></div>
-
-          <!-- If you need navigation buttons -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-
-        </div>
-
-
-      </div>
-      <!-- 
-      <div class="s-financial__img">
-        <img src="img/financial.png" alt="">
-      </div> -->
-
-    </div>
-  </section>
-
-  <!-- section IA Oliver -->
-  <section class="s-oliver">
-    <div class="container">
-      <h4 class="mb-4 color-blue">Olá sou o O<strong>live</strong>r!</h4>
-
-      <div class="d-flex headline">
-        <h2 class="headline__title">
-          Uma <strong>inteligência artificial</strong> feita para te ajudar.</h2>
-
-        <h4 class="headline__subtitle text-gray">Vou te mostrar todas as novidades que preparamos para você
-        </h4>
-      </div>
-
-      <div class="d-flex banner">
-        <div class="s-oliver__text mb-5">
-          <h3 class="text-white mb-5">Espaço e-learning e assistente virtual à sua disposição</h3>
-          <p>Sabemos que o desenvolvimento da empresa converge com o conhecimento da sua equipe! Para isso, além de
-            todas
-            as funcionalidades acima, fornecemos um espaço de e-learning com cursos voltados ao desenvolvimento da
-            equipe
-            em diferentes áreas - voltadas aos assuntos financeiros e administrativos. Além, do assistente virtual
-            Oliver,
-            que te acompanha durante todas as telas com pequenos tutoriais, garantindo o melhor funcionamento.</p>
-        </div>
-        <div class="s-oliver__img" data-aos="fade-left" data-aos-duration="2000">
-          <img loading="lazy" src="img/oliver.svg" alt="Oliver" title="oliver">
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- section Dúvidas  -->
-  <section class="s-help" id="duvidas">
-    <div class="container">
-      <h2>Dúvidas <strong>gerais</strong> </h2>
-
-      <div class="d-flex">
-        <div class="s-help__card">
-          <h4>Como ocorre e qual a duração da implantação do sistema?</h4>
-          <p>A implantação do sistema liveFacilities na sua empresa, ocorre através de visitas programadas com nossa
-            equipe responsável. Normalmente, ocorre duas vezes por semana, mas varia de acordo com a sua
-            disponibilidade. O período de implantação varia de empresa para empresa, priorizando sempre suas
-            necessidades.</p>
-        </div>
-
-        <div class="s-help__card">
-          <h4>Caso ocorra alguma instabilidade, a empresa possui suporte ativo para nos auxiliar?</h4>
-          <p>A empresa liveFacilities conta com um time de suporte ao atendimento que está à disposição para auxiliá-lo
-            sempre que possível. Você pode entrar em contato com eles através do e-mail, skype ou telefone. O horário é
-            comercial das 08:30 às 19:00.</p>
-        </div>
-
-        <div class="s-help__card">
-          <h4>Como localizar o aplicativo e quais os recursos utilizados?</h4>
-          <p>Para o perfil condômino o aplicativo disponibiliza as mesmas funcionalidades do Portal e pode ser baixado
-            através do Android e IOS. Para o perfil funcionário o aplicativo se volta para a gestão de atividades, com a
-            disposição de cheklists - planos de atividades a serem executadas em determinadas peridiocidades.</p>
-        </div>
-
-        <div class="s-help__card">
-          <h4>Existe alguma recomendação referente ao navegador a ser utilizado pelo software?</h4>
-          <p>Embora o sistema se adeque aos principais navegadores utilizados hoje no mercado, a empresa recomenda o
-            Google Crohme para uso.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <section class="s-contact" id="contato">
-
-
-    <div class="container">
-      <div class="headline">
-        <h4 class="mb-4 color-blue">Contato</h4>
-        <h2 class="headline__title">Solicite a sua <strong>Proposta Comercial</strong>
-        </h2>
-      </div>
-
-      <p class="text-center text-gray mt-5">
-        Entre em contato conosco através <br> do e-mail ou do whatsapp.</p>
-
-      <div class="d-flex">
-
-        <div class="card item">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24"
-            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-            <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-          </svg>
-          <h3>Whatsapp</h3>
-          <p> (11) 93091-1035</p>
-
-          <a aria-label="link" href="https://api.whatsapp.com/send?l=pt_BR&phone=5511996770608" class="btn-contact">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
-              height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M5 12l14 0" />
-              <path d="M13 18l6 -6" />
-              <path d="M13 6l6 6" />
-            </svg>
-          </a>
-        </div>
-
-        <div class="card item">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-            <path d="M3 7l9 6l9 -6" />
-          </svg>
-          <h3>E-mail</h3>
-          <p>suporte.live@suportti.net.br</p>
-
-          <a aria-label="link" href="mailto:suporte.live@suportti.net.br" class="btn-contact">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
-              height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M5 12l14 0" />
-              <path d="M13 18l6 -6" />
-              <path d="M13 6l6 6" />
-            </svg>
-          </a>
-        </div>
-
-        <div class="card item">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-11" width="24"
-            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-            <path d="M12 12l-2 -3" />
-            <path d="M12 7v5" />
-          </svg>
-          <h3>Atendimento</h3>
-          <p>
-            Segunda à sexta das 09:00h às 18:00h</p>
-          <a aria-label="link"
-            href="https://api.whatsapp.com/send?l=pt_BR&phone=559967706086&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site."
-            class="btn-contact">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
-              height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M5 12l14 0" />
-              <path d="M13 18l6 -6" />
-              <path d="M13 6l6 6" />
-            </svg>
-          </a>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-
-  <footer>
-    <div class="container color-dark">
-
-      <div class="d-flex">
-
-        <div class="footer-items" id="logo">
-          <div class="logotipo"><img loading="lazy" src="img/logo.png" title="liveFacilities" alt="liveFacilities"
-              width="224" height="100">
-          </div>
-          <p class="footer_description mt-4">Uma empresa de tecnologia, que busca através do software liveFacilities
-            desenvolver inovações para o seu negócio.
-          </p>
-
-          <div class="mt-5">
+          <div class="icons-mobile">
             <a aria-label="link" href="https://www.linkedin.com/in/live-facilities-1a5492199/" target="_blank"
               title="linkedin">
 
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="34"
-                height="34" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="none" stroke-linecap="round"
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
                 stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
@@ -786,8 +128,8 @@
 
             <a aria-label="link" href="https://www.instagram.com/livefacilities/?hl=pt-br" target="_blank"
               title="facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="34"
-                height="34" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="none" stroke-linecap="round"
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
                 stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
@@ -797,8 +139,8 @@
             </a>
 
             <a aria-label="link" href="https://www.facebook.com/livefacilities" target="_blank" title="facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="34"
-                height="34" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="none" stroke-linecap="round"
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
                 stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
@@ -806,134 +148,809 @@
             </a>
 
           </div>
+
         </div>
 
-        <div class="footer-items">
-          <h4>Links</h4>
-          <ul>
-            <li><a aria-label="link" href="#about">Quem somos</a></li>
-            <li><a aria-label="link" href="#facilidades">Facilidades</a></li>
-            <li><a aria-label="link" href="#duvidas">Dúvidas</a></li>
-            <li><a aria-label="link" href="#contato">Contato</a> </li>
-          </ul>
+      </div>
+    </header>
+    <!-- section hero -->
+    <section class="s-hero" id="about">
+      <div class="container">
+        <div class="d-flex">
+          <div class="s-hero__text">
+            <!-- <span class="s-hero__text-tag" data-aos="fade-up" data-aos-duration="1500"> Sejam bem-vindos(a)!</span> -->
+            <h1 class="s-hero__text-title" data-aos="fade-up" data-aos-duration="1700">
+              A vida do empreendimento em sua mãos
+            </h1>
+
+            <div class="text-white" data-aos="fade-up" data-aos-duration="1800">
+              <p class="s-hero__text-description">
+                "A ideia de uma única plataforma com todas as ferramentas necessárias, além de tecnologia de ponta, traz
+                um
+                grande diferencial para a gestão da nossa carteira. A equipe <b>liveFacilities</b> está sempre pronta
+                para
+                solucionar
+                as dificuldades dos usuários e modelar as ferramentas de acordo com as nossas necessidades."
+              </p>
+
+              <span class="message color-green-light" style="float:right">Daniel Brandão | Gerente Financeiro Mario
+                Dal
+                Maso</span>
+            </div>
+
+            <div class="s-hero__text-btn">
+              <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5511930911035" class="btn-secondary white mt-5"
+                data-aos="fade-up" data-aos-duration="1900">
+                Fale com um especialista
+              </a>
+            </div>
+
+
+          </div>
+
+          <div class="s-hero__items" data-aos="fade-down" data-aos-duration="1900">
+            <p class="text-white text-center mb-4">Administramos:</p>
+
+            <div class="s-hero__items-flex">
+              <div class="services">
+                <img class="mr-2" src="img/icon-facilities.svg" alt="facilities" width="40" height="40">
+                <p>Facilities</p>
+              </div>
+              <div class="services">
+                <img class="mr-2" src="img/icon-terceirizados.svg" alt="terceirizados" width="40" height="40">
+                <p>Terceirizadas</p>
+              </div>
+
+              <div class="services">
+                <img class="mr-2" src="img/icon-sindicancia.svg" alt="sindicancia" width="40" height="40">
+                <p>Sindicância</p>
+              </div>
+              <div class="services">
+                <img class="mr-2" src="img/icon-condominios.svg" alt="condominios" width="40" height="40">
+                <p>Condomínios</p>
+              </div>
+            </div>
+
+          </div>
+
+
         </div>
 
-        <div class="footer-items">
-          <h4>Contato</h4>
-          <ul>
-            <li>
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24"
-                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                  <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                </svg>
-              </span>
+      </div>
+    </section>
 
-              <span> Alameda Santos, 2326, Jardim Paulista, São Paulo-SP</span>
+    <!-- section sobre -->
+    <section class="s-about" id="quem-somos">
+      <div class="container">
+        <div class="d-flex">
 
-            </li>
-            <li>
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-10" width="24"
-                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                  <path d="M12 12l-3 -2" />
-                  <path d="M12 7v5" />
-                </svg>
-              </span>
+          <div class="s-about__text">
+            <h4 class="color-blue">Quem somos</h4>
 
-              <span> Segunda à sexta das 08:00h às 18:00h</span>
+            <h3 class="s-about__text-title mt-5">Uma empresa de tecnologia, que busca através do <b
+                class="color-blue">software
+                liveFacilities</b>
+              desenvolver inovações para o seu
+              negócio.</h3>
 
-            </li>
-            <li>
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24"
-                  viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                  <path d="M3 7l9 6l9 -6" />
-                </svg>
-              </span>
-              <a aria-label="link" href="mailto:suporte.live@suportti.net.br">suporte.live@suportti.net.br</a>
 
-            </li>
+            <p class="s-about__text-description mt-5"> Com mais de 10 anos no mercado, Nosso diferencial é oferecer
+              resultados
+              positivos
+              com
+              um sistema único de gestão e automatizações, além de dedicar uma solução completa e integrada, tanto
+              financeira
+              como operacional.
 
-            <li> <span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24"
-                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                  <path
-                    d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-                </svg>
-              </span>
-              <a aria-label="link"
-                href="https://api.whatsapp.com/send?l=pt_BR&phone=5511930911035&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site.">
-                (11) 93091-1035</a>
+            <p class="mb-5 mt-5">
+              <span class="text-dark">Atuamos em 05 principais segmentos:</span>
+            </p>
 
-            </li>
-          </ul>
+            <ul>
+              <li>condomínios</li>
+              <li>empresas de
+                facilities</li>
 
+              <li>terceirizadas</li>
+              <li>administradoras</li>
+              <li>sindicâncias</li>
+            </ul>
+
+            </p>
+          </div>
+
+          <div class="s-about__img">
+            <img loading="lazy" src="img/company.svg" alt="company" title="company" data-aos="fade-up" width="417"
+              height="403">
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="line"></div>
+      <div class="container">
+        <p class="mt-5 text-center mb-4 text-gray-300"><b>Empresas que confiam no nosso trabalho</b> </p>
+        <div class="container-list">
+          <div class="wrapper">
+            <img loading="lazy" class="img-partners"
+              src="https://www.livefacilities.com.br/img/section/clients/6.png?v=1.0" alt="" width="150">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro1.png" alt="tercera" title="tercera"
+              width="150">
+            <img loading="lazy" class="img-partners"
+              src="https://www.livefacilities.com.br/img/section/clients/1.png?v=1.0" alt="" width="150">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro2.png" alt="tercera" title="tercera"
+              width="150">
+
+
+            <img loading="lazy" class="img-partners"
+              src="https://www.livefacilities.com.br/img/section/clients/6.png?v=1.0" alt="" width="150">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro1.png" alt="tercera" title="tercera"
+              width="150">
+            <img loading="lazy" class="img-partners"
+              src="https://www.livefacilities.com.br/img/section/clients/1.png?v=1.0" alt="" width="150">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro2.png" alt="tercera" title="tercera"
+              width="150">
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- section AFO -->
+    <section class="s-afo">
+      <div class="container d-flex">
+        <div class="cardContainer first-card">
+          <h4>AFO</h4>
+          <h2 class="s-afo__title text-white ">Conheça nosso sistema operacional <strong>AFO</strong> </h2>
+        </div>
+
+
+        <div class="cardContainer">
+          <div class="card">
+            <h3 class="city">
+              Administrativo</h3>
+            <ul>
+              <li>Comunicação</li>
+              <li>Documentação</li>
+              <li>Contratos e seguros</li>
+              <li>Reservas e autorizações</li>
+              <li>Mensageria</li>
+              <li>Chaves e ferramentas</li>
+              <li>Assembleias</li>
+            </ul>
+
+
+          </div>
+        </div>
+
+        <div class="cardContainer">
+          <div class="card">
+            <h3 class="city">
+              Financeiro</h3>
+            <ul>
+              <li>Prever</li>
+              <li>Receber</li>
+              <li>Pagar</li>
+              <li>Cobrar</li>
+              <li>Prestar Contas</li>
+            </ul>
+
+
+          </div>
+        </div>
+
+        <div class="cardContainer">
+          <div class="card">
+            <h3 class="city">
+              Operacional</h3>
+            <ul>
+              <li>Preventivas</li>
+              <li>Corretivas
+              </li>
+              <li>Checklist / Plano de trabalho</li>
+              <li>Disponibilidade X Tempo de parada</li>
+              <li>Performance de fornecedores</li>
+              <li>Facilities Monitor</li>
+              <li>Qrcode Facilities</li>
+              <li>Indicadores</li>
+            </ul>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- section valores -->
+    <section class="s-values">
+      <div class="container">
+        <h4 class="color-blue">Nossa missão</h4>
+
+        <div class="d-flex headline">
+          <h2 class="headline__title">
+            Desenvolvimento e <b>transparência</b> </h2>
+
+          <h4 class="headline__subtitle text-gray">Descubra nossa Missão, Visão e Valores
+          </h4>
+
+        </div>
+
+        <div class="cards">
+          <div class="card img1">
+            <h3 class="text-white">
+              MISSÃO
+            </h3>
+
+            <div class="card__bottom">
+              <img src="img/icon-missao.svg" alt="icon missão" width="44" height="44">
+              <h4 class="card__bottom-title mb-4 mt-4">Soluções</h4>
+              <p id="text" class="text-showmore">
+                Construir soluções tecnológicas que impactam positivamente o seu empreendimento.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="card img2">
+            <h3 class="text-white">
+              VISÃO
+            </h3>
+
+            <div class="card__bottom">
+              <img src="img/icon-gestao.svg" alt="icon gestão" width="44" height="44">
+              <h4 class="card__bottom-title mb-4 mt-4">Modelo de gestão</h4>
+              <p id="text" class="text-showmore">
+                Estabelecer com o liveFacilities um novo modelo de gestão para empreendimentos.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="card img3">
+            <h3 class="text-white">
+              VALORES
+            </h3>
+
+            <div class="card__bottom">
+              <img src="img/icon-valores.svg" alt="icon missão" width="44" height="44">
+              <h4 class="card__bottom-title mb-4 mt-4">Relacionamento</h4>
+              <p id="text" class="text-showmore">
+                Atuar com máxima segurança de nossos serviços e principalmente respeito e parceria com nossos clientes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- section facilidades -->
+    <section class="s-facilidades" id="facilidades">
+      <div class="container">
+
+        <div class="d-flex flex-mobile">
+          <div class="s-facilidades__img mx-auto" data-aos="fade-right">
+            <!-- <p class="js-date-current" id="js-date-current">loadind..</p> -->
+            <img loading="lazy" src="img/app.png" alt="aplicativo liveFacilities" title="aplicativo liveFacilities"
+              width="328" height="614">
+          </div>
+
+          <div class="s-facilidades__text" data-aos="fade-up">
+
+            <h4 class="mb-4 color-blue">Facilidades</h4>
+            <h2>Facilidade em <strong>suas mãos</strong> </h2>
+            <p class="s-facilidades__text-description">Com o nosso aplicativo, é possível fazer a gestão de todo o seu
+              <strong> empreendimento.</strong>
+            </p>
+
+
+            <div class="accordion-wrap mt-5">
+              <div class="d-flex">
+                <img class=" mr-4" src="img/icon-comodidade.svg" alt="icone comodidade" width="44" height="44">
+                <div class="accordion-item">
+                  <h4 class="accordion-header"> Maior comodidade <img class=" icon rotate" src="img/polygon.svg" alt="">
+                  </h4>
+
+                </div>
+              </div>
+
+              <div class="accordion-text" style="display: block;">
+                <p>Com o uso do app, você tem a comodidade de visualizar suas atividades em qualquer lugar, e com todas
+                  as
+                  funcionalidades disponíveis no sistema.
+
+                  Casos de sucesso envolvendo o nosso app, se voltam principalmente para as empresas de facilities, que
+                  fazem avaliações de espaços, itens e equipamentos. Com a leitura do QR Code é possível abrir suas
+                  ordens
+                  de serviço diretamente na tela, e com isso facilitar o gerenciamento do seu negócio e o trabalho dos
+                  seus colaboradores. </p>
+              </div>
+            </div>
+
+
+            <div class="accordion-wrap">
+              <div class="d-flex">
+                <img class="mr-4" src="img/icon-praticidade.svg" alt="Praticidade" width="44" height="44">
+                <div class="accordion-item">
+                  <h4 class="accordion-header"> Praticidade para o seu cliente <img class="icon rotate"
+                      src="img/polygon.svg" alt="polygon"> </h4>
+                </div>
+              </div>
+
+              <div class="accordion-text">
+                <p>Com o uso do app, além da comodidade você tem a praticidade de gerenciar e resolver suas atividades
+                  do
+                  dia a dia.
+
+                  Nossos casos de sucesso envolvendo a praticidade são principalmente com empresas administradoras de
+                  condomínios. Onde, o condômino - cliente final - tem total acesso para verificar informações do seu
+                  condomínio. Assim como: gerenciar sua posição financeira, fazer reservas de espaço, cadastrar seus
+                  visitantes, veículos e funcionários. Com o cadastro destes no sistema, é possível fazer a integração
+                  com
+                  o dispositivo e depois com um hardware para controle de acesso. </p>
+              </div>
+            </div>
+
+
+            <div class="accordion-wrap">
+              <div class="d-flex">
+                <img class="mr-4" src="img/icon-personalizado.svg" alt="personalizado" width="44" height="44" />
+                <div class="accordion-item">
+                  <h4 class="accordion-header"> App personalizado de acordo com as suas necessidades <img
+                      class="icon rotate" src="img/polygon.svg" alt="polygon"> </h4>
+                </div>
+              </div>
+
+              <div class="accordion-text">
+                <p>O aplicativo da liveFacilities se adequa as suas necessidades. Pode-se dizer, portanto, que o mesmo
+                  terá as funcionalidades essenciais para a gestão.
+
+                  Cada detalhe é pensado exclusivamente para as facilidades do seu empreendimento, e para que todos que
+                  fazem parte sintam-se pertencentes também ao sistema.</p>
+              </div>
+            </div>
+
+          </div>
         </div>
 
 
       </div>
+    </section>
 
-    </div>
-    <div class="credits">
-      <a aria-label="link" href="#particles-js" class="btn-top" aria-label="Botão para subir para o topo do site">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-arrow-narrow-up" width="24" height="24"
-          viewBox="0 0 24 24" stroke-width="1.5" stroke="#00d7d7" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M12 5l0 14" />
-          <path d="M16 9l-4 -4" />
-          <path d="M8 9l4 -4" />
-        </svg></a>
-      <p class="d-center color-light text-center">Voltar ao topo</p>
+    <!-- section financeiro -->
+    <section class="s-financial">
+
+      <div class="container">
+        <h4 class="mb-4 color-green-light">Financeiro</h4>
+
+        <div class="d-flex headline">
+          <h2 class="headline__title text-white">
+            Conheça nosso <strong> Processo Financeiro </strong></h2>
+
+          <h4 class="headline__subtitle text-white">Atividades repetitivas e manuais fazem parte da sua operação
+            financeira?
+            Automatizamos grande parte do processo.
+          </h4>
+        </div>
+
+      </div>
+      <div class="d-flex">
+        <div class="s-financial__text">
+
+          <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+
+              <div class="card swiper-slide ">
+                <h3 class="mb-4 "><b class="color-green-light">1.</b> Prever</h3>
+                <p>Nossa previsão orçamentária é integrada ao rateio e contas a pagar, garantindo aprovação e
+                  justificativa de desvios. Oferecemos relatórios e indicadores para apoiar sua gestão e decisões.
+                </p>
+              </div>
+
+              <div class="card swiper-slide">
+                <h3 class="mb-4"><b class="color-green-light">2.</b> Receber</h3>
+                <p>Facilitamos o rateio de receitas, incluindo automaticamente valores de reservas e serviços pay per
+                  use.
+                  A baixa de boletos é rápida devido à automatização bancária.</p>
+              </div>
+
+              <div class="card swiper-slide">
+                <h3 class="mb-4"><b class="color-green-light">3.</b> Pagar</h3>
+                <p>Nosso sistema de contas a pagar inclui: retenção e integração de tributos por fornecedor e município,
+                  múltiplas configurações de workflow, validação de duplicidade com código de barras, integração com
+                  REINF
+                  e medição de consumo, além de controle de débito automático.</p>
+              </div>
+
+              <div class="card swiper-slide">
+                <h3 class="mb-4"><b class="color-green-light">4.</b> Cobrar</h3>
+                <p>O liveFacilities melhora sua cobrança com e-mails personalizados, geração automática de acordos e
+                  apontamentos jurídicos inteligentes. Oferecemos ferramentas de gestão, controle e relatórios.
+                </p>
+              </div>
+
+              <div class="card swiper-slide">
+                <h3 class="mb-4"><b class="color-green-light">5.</b> Prestar Contas</h3>
+                <p>Disponibilizamos um balancete online no formato de revista, promovendo a sustentabilidade ao eliminar
+                  pastas impressas. Facilitamos a gestão de despesas e aprovação de períodos online.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <!-- If you need navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+          </div>
 
 
-      <div class="container wps-games">
-        <div><b> © Livefacilities 2024.</b> All rights reserved. </div>
+        </div>
+        <!-- 
+        <div class="s-financial__img">
+          <img src="img/financial.png" alt="">
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- section IA Oliver -->
+    <section class="s-oliver">
+      <div class="container">
+        <h4 class="mb-4 color-blue">Olá sou o O<strong>live</strong>r!</h4>
+
+        <div class="d-flex headline">
+          <h2 class="headline__title">
+            Uma <strong>inteligência artificial</strong> feita para te ajudar.</h2>
+
+          <h4 class="headline__subtitle text-gray">Vou te mostrar todas as novidades que preparamos para você
+          </h4>
+        </div>
+
+        <div class="d-flex banner">
+          <div class="s-oliver__text mb-5">
+            <h3 class="text-white mb-5">Espaço e-learning e assistente virtual à sua disposição</h3>
+            <p>Sabemos que o desenvolvimento da empresa converge com o conhecimento da sua equipe! Para isso, além de
+              todas
+              as funcionalidades acima, fornecemos um espaço de e-learning com cursos voltados ao desenvolvimento da
+              equipe
+              em diferentes áreas - voltadas aos assuntos financeiros e administrativos. Além, do assistente virtual
+              Oliver,
+              que te acompanha durante todas as telas com pequenos tutoriais, garantindo o melhor funcionamento.</p>
+          </div>
+          <div class="s-oliver__img" data-aos="fade-left" data-aos-duration="2000">
+            <img loading="lazy" src="img/oliver.svg" alt="Oliver" title="oliver" width="105" height="309">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- section Dúvidas  -->
+    <section class="s-help" id="duvidas">
+      <div class="container">
+        <h2>Dúvidas <strong>gerais</strong> </h2>
+
+        <div class="d-flex">
+          <div class="s-help__card">
+            <h4>Como ocorre e qual a duração da implantação do sistema?</h4>
+            <p>A implantação do sistema liveFacilities na sua empresa, ocorre através de visitas programadas com nossa
+              equipe responsável. Normalmente, ocorre duas vezes por semana, mas varia de acordo com a sua
+              disponibilidade. O período de implantação varia de empresa para empresa, priorizando sempre suas
+              necessidades.</p>
+          </div>
+
+          <div class="s-help__card">
+            <h4>Caso ocorra alguma instabilidade, a empresa possui suporte ativo para nos auxiliar?</h4>
+            <p>A empresa liveFacilities conta com um time de suporte ao atendimento que está à disposição para
+              auxiliá-lo
+              sempre que possível. Você pode entrar em contato com eles através do e-mail, skype ou telefone. O horário
+              é
+              comercial das 08:30 às 19:00.</p>
+          </div>
+
+          <div class="s-help__card">
+            <h4>Como localizar o aplicativo e quais os recursos utilizados?</h4>
+            <p>Para o perfil condômino o aplicativo disponibiliza as mesmas funcionalidades do Portal e pode ser baixado
+              através do Android e IOS. Para o perfil funcionário o aplicativo se volta para a gestão de atividades, com
+              a
+              disposição de cheklists - planos de atividades a serem executadas em determinadas peridiocidades.</p>
+          </div>
+
+          <div class="s-help__card">
+            <h4>Existe alguma recomendação referente ao navegador a ser utilizado pelo software?</h4>
+            <p>Embora o sistema se adeque aos principais navegadores utilizados hoje no mercado, a empresa recomenda o
+              Google Crohme para uso.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="s-contact" id="contato">
+
+      <div class="container">
+        <div class="headline">
+          <h4 class="mb-4 color-blue">Contato</h4>
+          <h2 class="headline__title">Solicite a sua <strong>Proposta Comercial</strong>
+          </h2>
+        </div>
+
+        <p class="text-center text-gray mt-5">
+          Entre em contato conosco através <br> do e-mail ou do whatsapp.</p>
+
+        <div class="d-flex">
+
+          <div class="card item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24"
+              height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path
+                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+            </svg>
+            <h3>Whatsapp</h3>
+            <p> (11) 93091-1035</p>
+
+            <a aria-label="link" href="https://api.whatsapp.com/send?l=pt_BR&phone=5511996770608" class="btn-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
+                height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l14 0" />
+                <path d="M13 18l6 -6" />
+                <path d="M13 6l6 6" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="card item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+              <path d="M3 7l9 6l9 -6" />
+            </svg>
+            <h3>E-mail</h3>
+            <p>suporte.live@suportti.net.br</p>
+
+            <a aria-label="link" href="mailto:suporte.live@suportti.net.br" class="btn-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
+                height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l14 0" />
+                <path d="M13 18l6 -6" />
+                <path d="M13 6l6 6" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="card item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-11" width="24"
+              height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006d8f" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+              <path d="M12 12l-2 -3" />
+              <path d="M12 7v5" />
+            </svg>
+            <h3>Atendimento</h3>
+            <p>
+              Segunda à sexta das 09:00h às 18:00h</p>
+            <a aria-label="link"
+              href="https://api.whatsapp.com/send?l=pt_BR&phone=559967706086&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site."
+              class="btn-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
+                height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l14 0" />
+                <path d="M13 18l6 -6" />
+                <path d="M13 6l6 6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container color-dark">
+
+        <div class="d-flex">
+
+          <div class="footer-items" id="logo">
+            <div class="logotipo"><img loading="lazy" src="img/logo.png" title="liveFacilities" alt="liveFacilities"
+                width="224" height="100">
+            </div>
+            <p class="footer_description mt-4">Uma empresa de tecnologia, que busca através do software liveFacilities
+              desenvolver inovações para o seu negócio.
+            </p>
+
+            <div class="mt-5">
+              <a aria-label="link" href="https://www.linkedin.com/in/live-facilities-1a5492199/" target="_blank"
+                title="linkedin">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="34"
+                  height="34" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                  <path d="M8 11l0 5" />
+                  <path d="M8 8l0 .01" />
+                  <path d="M12 16l0 -5" />
+                  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg>
+
+              </a>
+
+              <a aria-label="link" href="https://www.instagram.com/livefacilities/?hl=pt-br" target="_blank"
+                title="facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="34"
+                  height="34" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                  <path d="M16.5 7.5l0 .01" />
+                </svg>
+              </a>
+
+              <a aria-label="link" href="https://www.facebook.com/livefacilities" target="_blank" title="facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="34"
+                  height="34" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="footer-items">
+            <h4>Links</h4>
+            <ul>
+              <li><a aria-label="link" href="#about">Quem somos</a></li>
+              <li><a aria-label="link" href="#facilidades">Facilidades</a></li>
+              <li><a aria-label="link" href="#duvidas">Dúvidas</a></li>
+              <li><a aria-label="link" href="#contato">Contato</a> </li>
+            </ul>
+          </div>
+
+          <div class="footer-items">
+            <h4>Contato</h4>
+            <ul>
+              <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                  </svg>
+                </span>
+
+                <span> Alameda Santos, 2326, Jardim Paulista, São Paulo-SP</span>
+
+              </li>
+              <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-10" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M12 12l-3 -2" />
+                    <path d="M12 7v5" />
+                  </svg>
+                </span>
+
+                <span> Segunda à sexta das 08:00h às 18:00h</span>
+
+              </li>
+              <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                    <path d="M3 7l9 6l9 -6" />
+                  </svg>
+                </span>
+                <a aria-label="link" href="mailto:suporte.live@suportti.net.br">suporte.live@suportti.net.br</a>
+
+              </li>
+
+              <li> <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path
+                      d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                  </svg>
+                </span>
+                <a aria-label="link"
+                  href="https://api.whatsapp.com/send?l=pt_BR&phone=5511930911035&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site.">
+                  (11) 93091-1035</a>
+
+              </li>
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="credits">
+        <a aria-label="link" href="#particles-js" class="btn-top" aria-label="Botão para subir para o topo do site">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-arrow-narrow-up" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#00d7d7" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 5l0 14" />
+            <path d="M16 9l-4 -4" />
+            <path d="M8 9l4 -4" />
+          </svg></a>
+        <p class="d-center color-light text-center">Voltar ao topo</p>
+
+
+        <div class="container wps-games">
+          <div><b> © Livefacilities 2024.</b> All rights reserved. </div>
 
 
 
-        <div class="d-flex align-center">
           <div class="d-flex align-center">
-            <span class="mr-2"> Desenvolvido por: </span>
-            <a aria-label="link" href="https://wpsgames.com.br"><img loading="lazy" src="./img/ico-crow.svg"
-                alt="wps games" width="30px" height="17px"></a>
+            <div class="d-flex align-center">
+              <span class="mr-2"> Desenvolvido por: </span>
+              <a aria-label="link" href="https://wpsgames.com.br"><img loading="lazy" src="./img/ico-crow.svg"
+                  alt="wps games" width="30px" height="17px"></a>
+            </div>
+
           </div>
 
         </div>
 
+
       </div>
 
+    </footer>
+
+    <div class="btn-whats" id="whatsAppBtn" style="display: block;">
+      <a aria-label="link" href="https://api.whatsapp.com/send?l=pt_BR&phone=5511930911035" target="_blank"
+        aria-label="instagram da backlgrs"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon-tabler icon-tabler-brand-whatsapp" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+          <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+          </path>
+        </svg>
+      </a>
 
     </div>
+  </main>
 
-  </footer>
-
-  <div class="btn-whats" id="whatsAppBtn" style="display: block;">
-    <a aria-label="link" href="https://api.whatsapp.com/send?l=pt_BR&phone=5511930911035" target="_blank"
-      aria-label="instagram da backlgrs"><svg xmlns="http://www.w3.org/2000/svg"
-        class="icon-tabler icon-tabler-brand-whatsapp" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
-        stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
-        <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
-        </path>
-      </svg>
-    </a>
-
-  </div>
 
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
