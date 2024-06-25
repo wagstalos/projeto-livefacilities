@@ -76,7 +76,8 @@
         }
 
         .card {
-            height: 210px;
+            
+            height: 220px;
             border: 1px solid rgba(197, 190, 220, 0.2);
             background: linear-gradient(129.19deg, #142236 70%, rgba(20, 34, 54, 0) 133.36%);
             background: rgb(0 0 0 / 17%);
@@ -125,9 +126,9 @@
         }
     }
 
-    @include responsive($mobile){
-        &__text{
-            .card{
+    @include responsive($mobile) {
+        &__text {
+            .card {
                 height: auto;
             }
         }
