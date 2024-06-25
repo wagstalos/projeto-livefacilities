@@ -155,7 +155,7 @@
 
     //mobile
     @include responsive($mobile) {
-        padding-top: 10.1rem;
+        padding-top: 12.1rem;
         height: auto;
         background: linear-gradient(
                 -180deg,
@@ -171,8 +171,9 @@
 
         &__text {
             &-title {
-                font-size: 3rem;
+                font-size: 3.4rem;
                 margin-top: 0;
+                padding: 0 $gutter * 2;
             }
             &-description {
                 font-size: 1.6rem;
@@ -186,6 +187,11 @@
             .services {
                 display: relative;
                 width: 46%;
+                border: 1px solid #414141;
+
+                p {
+                    font-size: 1.5rem;
+                }
             }
         }
     }

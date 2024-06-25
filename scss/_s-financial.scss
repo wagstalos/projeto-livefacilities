@@ -35,7 +35,7 @@
             position: relative;
             margin-top: 100px;
             padding: 20px;
-            padding-bottom: 50px;
+            padding-bottom: 70px;
 
             :root {
                 --swiper-navigation-size: 15px;
@@ -44,7 +44,7 @@
             .swiper-button-next,
             .swiper-button-prev {
                 // position: relative;
-                top: 93% !important;
+                top: 90% !important;
                 bottom: 0;
                 background-color: #ffffff00;
                 padding: 16px;
@@ -76,11 +76,11 @@
         }
 
         .card {
-            height: auto;
+            height: 210px;
             border: 1px solid rgba(197, 190, 220, 0.2);
             background: linear-gradient(129.19deg, #142236 70%, rgba(20, 34, 54, 0) 133.36%);
             background: rgb(0 0 0 / 17%);
-            backdrop-filter: blur(8.1rem);
+            backdrop-filter: blur(1.1rem);
             padding: $gutter * 2;
 
             border-radius: $border-radius * 2;
@@ -123,5 +123,57 @@
                 margin-top: 20px;
             }
         }
+    }
+
+    @include responsive($mobile){
+        &__text{
+            .card{
+                height: auto;
+            }
+        }
+    }
+
+    /* WebKit (Chrome, Safari) */
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    /* Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #00b2b5 transparent;
+    }
+
+    /* Internet Explorer e Edge (versões antigas) */
+    body {
+        -ms-overflow-style: none; /* Oculta a barra de rolagem padrão */
+    }
+
+    body::-ms-scrollbar {
+        width: 12px;
+    }
+
+    body::-ms-scrollbar-track {
+        background: transparent;
+    }
+
+    body::-ms-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
     }
 }
