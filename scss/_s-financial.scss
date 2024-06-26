@@ -70,9 +70,13 @@
             }
             .swiper-pagination-bullet {
                 background: #fff;
+                transition: all 0.3s ease;
             }
             .swiper-pagination-bullet-active {
                 background: $brand-green-light;
+                width: 20px;
+                height: 8px;
+                border-radius: 5px;
             }
         }
 
