@@ -34,8 +34,8 @@
             content: "";
             position: absolute;
             border-radius: 50px;
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             background-color: $brand-green-light;
             top: 10%;
             right: 15%;
@@ -46,6 +46,8 @@
         &:hover {
             &::after {
                 transform: scale(2);
+                top: 10%;
+                right: 75%;
             }
         }
     }
