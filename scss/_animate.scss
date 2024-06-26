@@ -9,7 +9,7 @@
     position: absolute;
     top: 0;
     height: 100%;
-    width: 20%;
+    width: 25%;
     content: "";
     z-index: 1;
 }
@@ -28,10 +28,10 @@
     position: relative;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 25rem;
+    grid-auto-columns: 20rem;
 
     justify-items: stretch;
-    animation: scroll 10s linear infinite;
+    animation: scroll 15s linear infinite;
     align-items: center;
 }
 
@@ -89,13 +89,13 @@
     }
 }
 
-
 body.loading .content {
     display: none;
 }
 body.loading .loader {
     display: block;
 }
+
 .loader {
     display: none;
     width: 100px;
@@ -110,8 +110,12 @@ body.loading .loader {
     transform: translate(-50%, -50%);
 }
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .content {
     display: block;

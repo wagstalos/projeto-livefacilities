@@ -7,19 +7,37 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#3f51b5">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="Redesign Landing Page NEON by Wagner Paulo">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Facilities, Condomínios , Terceirizadas e Sindicância">
+  <meta property="og:description"
+    content="Estabelecer com o liveFacilities um novo modelo de gestão para empreendimentos.">
+  <meta property="og:image" content="./img/imagem-preview.jpg">
+  <meta property="og:url" content="https://www.livefacilities.com.br/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Facilities, Condomínios , Terceirizadas e Sindicância">
+  <meta name="twitter:description"
+    content="Estabelecer com o liveFacilities um novo modelo de gestão para empreendimentos.">
+  <meta name="twitter:image" content="./img/imagem-preview.jpg">
+
+  <meta name="title" content="Facilities, Condomínios , Terceirizadas e Sindicância">
   <meta name="description" content="Estabelecer com o liveFacilities um novo modelo de gestão para empreendimentos.">
   <meta name="author" content="Wagner Silva">
-  <meta name="keywords" content="Facilities, Condomínios , Terceirizadas, Sindicância, Sindicância">
+  <meta name="keywords" content="Facilities, Condomínios , Terceirizadas e Sindicância">
 
+  <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-
   <link rel="stylesheet" href="./css/plugins.css" />
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="preload" as="image" href="./img/hero.webp">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="manifest" href="./manifest.json">
   <title>Live Facilities</title>
 
 
@@ -28,8 +46,9 @@
 
 <body class="loading">
   <div class="loader"></div>
+  <div id="particles-js"></div>
   <main class="content">
-    <div id="particles-js"></div>
+
     <header>
       <div class="container">
         <a href="#" class="logo">
@@ -53,7 +72,7 @@
             </li>
           </ul>
         </nav>
-        <button class="btn-inline">PROPOSTA</button>
+        <a href="#contato" class="btn-inline">PROPOSTA</a>
       </div>
 
       <!-- menu mobile -->
@@ -61,7 +80,7 @@
         <!-- mobile dots -->
         <div class="dots">
 
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category" width="28" height="28"
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category" width="28" height="28"
             viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
             stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -69,13 +88,21 @@
             <path d="M14 4h6v6h-6z" />
             <path d="M4 14h6v6h-6z" />
             <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+          </svg> -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="34" height="34"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
           </svg>
         </div>
 
         <div class="menu-mobile">
           <div class="bg-dark"></div>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-x" width="34" height="34"
-            viewBox="0 0 24 24" stroke-width="2" stroke="#453f51" fill="none" stroke-linecap="round"
+            viewBox="0 0 24 24" stroke-width="2" stroke="#5f5c6b" fill="none" stroke-linecap="round"
             stroke-linejoin="round" fill="#453f51">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 6l-12 12"></path>
@@ -159,11 +186,11 @@
         <div class="d-flex">
           <div class="s-hero__text">
             <!-- <span class="s-hero__text-tag" data-aos="fade-up" data-aos-duration="1500"> Sejam bem-vindos(a)!</span> -->
-            <h1 class="s-hero__text-title" data-aos="fade-up" data-aos-duration="1700">
+            <h1 class="s-hero__text-title">
               A vida do empreendimento em sua mãos
             </h1>
 
-            <div class="text-white" data-aos="fade-up" data-aos-duration="1800">
+            <div class="text-white">
               <p class="s-hero__text-description">
                 "A ideia de uma única plataforma com todas as ferramentas necessárias, além de tecnologia de ponta, traz
                 um
@@ -179,8 +206,7 @@
             </div>
 
             <div class="s-hero__text-btn">
-              <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5511930911035" class="btn-secondary white mt-5"
-                data-aos="fade-up" data-aos-duration="1900">
+              <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5511930911035" class="btn-secondary white mt-5">
                 Fale com um especialista
               </a>
             </div>
@@ -270,28 +296,44 @@
 
       <div class="line"></div>
       <div class="container">
-        <p class="mt-5 text-center mb-4 text-gray-300"><b>Empresas que confiam no nosso trabalho</b> </p>
+        <p class="mt-5 text-center mb-4 text-gray-600 font-500">Empresas que confiam no nosso trabalho </p>
         <div class="container-list">
           <div class="wrapper">
-            <img loading="lazy" class="img-partners"
-              src="https://www.livefacilities.com.br/img/section/clients/6.png?v=1.0" alt="" width="150">
             <img loading="lazy" class="img-partners" src="./img/empresas/parceiro1.png" alt="tercera" title="tercera"
-              width="150">
-            <img loading="lazy" class="img-partners"
-              src="https://www.livefacilities.com.br/img/section/clients/1.png?v=1.0" alt="" width="150">
-            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro2.png" alt="tercera" title="tercera"
-              width="150">
+              width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro2.png" alt="josé martins"
+              title="josé martins" width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro3.png" alt="vortex" title="vortéx"
+              width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro4.png" alt="innova" title="innova"
+              width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro5.png" alt="Mario Dal Maso"
+              title="Mario Dal Maso" width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro6.png" alt="stylo" title="stylo"
+              width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro7.png"
+              alt="centro empresarial são paulo" title="centro empresarial são paulo" width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro8.png" alt="itabr" title="itabr"
+              width="150" height="75">
 
 
-            <img loading="lazy" class="img-partners"
-              src="https://www.livefacilities.com.br/img/section/clients/6.png?v=1.0" alt="" width="150">
+
             <img loading="lazy" class="img-partners" src="./img/empresas/parceiro1.png" alt="tercera" title="tercera"
-              width="150">
-            <img loading="lazy" class="img-partners"
-              src="https://www.livefacilities.com.br/img/section/clients/1.png?v=1.0" alt="" width="150">
-            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro2.png" alt="tercera" title="tercera"
-              width="150">
-
+              width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro2.png" alt="josé martins"
+              title="josé martins" width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro3.png" alt="vortex" title="vortéx"
+              width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro4.png" alt="innova" title="innova"
+              width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro5.png" alt="Mario Dal Maso"
+              title="Mario Dal Maso" width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro6.png" alt="stylo" title="stylo"
+              width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro7.png"
+              alt="centro empresarial são paulo" title="centro empresarial são paulo" width="150" height="75">
+            <img loading="lazy" class="img-partners" src="./img/empresas/parceiro8.png" alt="itabr" title="itabr"
+              width="150" height="75">
 
           </div>
 
@@ -303,13 +345,13 @@
     <!-- section AFO -->
     <section class="s-afo">
       <div class="container d-flex">
-        <div class="cardContainer first-card">
+        <div class="cardContainer first-card no-after">
           <h4>AFO</h4>
           <h2 class="s-afo__title text-white ">Conheça nosso sistema operacional <strong>AFO</strong> </h2>
         </div>
 
 
-        <div class="cardContainer">
+        <div class="cardContainer" data-aos="flip-right">
           <div class="card">
             <h3 class="city">
               Administrativo</h3>
@@ -327,7 +369,7 @@
           </div>
         </div>
 
-        <div class="cardContainer">
+        <div class="cardContainer" data-aos="flip-right">
           <div class="card">
             <h3 class="city">
               Financeiro</h3>
@@ -343,7 +385,7 @@
           </div>
         </div>
 
-        <div class="cardContainer">
+        <div class="cardContainer" data-aos="flip-right">
           <div class="card">
             <h3 class="city">
               Operacional</h3>
@@ -369,7 +411,7 @@
     <!-- section valores -->
     <section class="s-values">
       <div class="container">
-        <h4 class="color-blue">Nossa missão</h4>
+        <h4 class="color-blue mb-4">Nossa missão</h4>
 
         <div class="d-flex headline">
           <h2 class="headline__title">
@@ -453,7 +495,8 @@
               <div class="d-flex">
                 <img class=" mr-4" src="img/icon-comodidade.svg" alt="icone comodidade" width="44" height="44">
                 <div class="accordion-item">
-                  <h4 class="accordion-header"> Maior comodidade <img class=" icon rotate" src="img/polygon.svg" alt="">
+                  <h4 class="accordion-header"> Maior comodidade <img class=" icon rotate" src="img/polygon.svg"
+                      alt="icon" width="10" height="22">
                   </h4>
 
                 </div>
@@ -478,7 +521,7 @@
                 <img class="mr-4" src="img/icon-praticidade.svg" alt="Praticidade" width="44" height="44">
                 <div class="accordion-item">
                   <h4 class="accordion-header"> Praticidade para o seu cliente <img class="icon rotate"
-                      src="img/polygon.svg" alt="polygon"> </h4>
+                      src="img/polygon.svg" alt="polygon" width="10" height="22"> </h4>
                 </div>
               </div>
 
@@ -502,7 +545,7 @@
                 <img class="mr-4" src="img/icon-personalizado.svg" alt="personalizado" width="44" height="44" />
                 <div class="accordion-item">
                   <h4 class="accordion-header"> App personalizado de acordo com as suas necessidades <img
-                      class="icon rotate" src="img/polygon.svg" alt="polygon"> </h4>
+                      class="icon rotate" src="img/polygon.svg" alt="polygon" width="10" height="22"> </h4>
                 </div>
               </div>
 

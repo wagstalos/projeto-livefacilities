@@ -15,6 +15,7 @@
         background: linear-gradient(to top, rgba(4, 16, 32, 1) 0%, rgba(4, 16, 32, 0) 100%);
         pointer-events: none;
     }
+
     .headline {
         justify-content: space-between;
         align-items: center;
@@ -69,14 +70,18 @@
             }
             .swiper-pagination-bullet {
                 background: #fff;
+                transition: all 0.3s ease;
             }
             .swiper-pagination-bullet-active {
                 background: $brand-green-light;
+                width: 20px;
+                height: 8px;
+                border-radius: 5px;
             }
         }
 
         .card {
-            height: 210px;
+            height: auto;
             border: 1px solid rgba(197, 190, 220, 0.2);
             background: linear-gradient(129.19deg, #142236 70%, rgba(20, 34, 54, 0) 133.36%);
             background: rgb(0 0 0 / 17%);
@@ -125,9 +130,9 @@
         }
     }
 
-    @include responsive($mobile){
-        &__text{
-            .card{
+    @include responsive($mobile) {
+        &__text {
+            .card {
                 height: auto;
             }
         }

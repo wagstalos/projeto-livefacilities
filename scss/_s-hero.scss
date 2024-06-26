@@ -1,7 +1,7 @@
 .s-hero {
     width: 100%;
     // height: 90vh;
-    padding-top: 17.1rem;
+    padding-top: 14.1rem;
     padding-bottom: 10.1rem;
 
     background: linear-gradient(-90deg, rgba(5, 23, 30, 0) 50%, rgba(5, 23, 30, 0.76) 60%, rgba(5, 23, 30, 1) 99.93%),
@@ -70,6 +70,7 @@
             margin-top: 1.4rem;
             color: $white;
             max-width: 74rem;
+            margin-bottom: $gutter * 4;
         }
 
         .btn-secondary {
@@ -90,8 +91,8 @@
         .services {
             width: calc(45% - 10px);
             flex-wrap: wrap;
-            backdrop-filter: blur(20px);
-            background: rgba(25, 25, 25, 0.6);
+            backdrop-filter: blur(10px);
+            background: rgba(25, 25, 25, 0.3);
             border-radius: 6px;
             color: $white;
             margin: 5px;
@@ -159,11 +160,11 @@
         height: auto;
         background: linear-gradient(
                 -180deg,
-                rgba(5, 23, 30, 0) 30%,
+                rgba(5, 23, 30, 0) 3%,
                 rgba(5, 23, 30, 0.76) 60%,
                 rgba(5, 23, 30, 1) 99.93%
             ),
-            linear-gradient(rgba(5, 23, 30, 0) 5%, rgba(5, 23, 30, 0.8) 60%, rgba(5, 23, 30, 0.86) 99.93%),
+            linear-gradient(rgba(5, 23, 30, 0) 5%, rgba(5, 23, 30, 0.8) 40%, rgba(5, 23, 30, 0.86) 99.93%),
             url(../img/hero.webp);
         background-repeat: no-repeat;
         background-position: right 42% bottom -1%;

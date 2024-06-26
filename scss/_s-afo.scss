@@ -23,12 +23,37 @@
     }
 
     .cardContainer {
-        // width: fit-content;
         position: relative;
         display: flex;
-        // align-items: center;
-        // justify-content: center;
         margin-bottom: $gutter * 2;
+        position: relative;
+        z-index: 2;
+        border-radius: 10px;
+        border-radius: 10px;
+        &::after {
+            content: "";
+            position: absolute;
+            border-radius: 50px;
+            width: 40px;
+            height: 40px;
+            background-color: $brand-green-light;
+            top: 10%;
+            right: 15%;
+            z-index: -1;
+            transition: all 0.3s ease-in;
+        }
+
+        &:hover {
+            &::after {
+                transform: scale(2);
+                top: 10%;
+                right: 75%;
+            }
+        }
+    }
+
+    .no-after::after {
+        display: none;
     }
 
     h4 {
@@ -45,11 +70,16 @@
 
         padding: 20px 10px;
         border-radius: 10px;
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(20px);
         background-color: rgba(65, 65, 65, 0.308);
         border: 1px solid rgba(255, 255, 255, 0.089);
         cursor: pointer;
         color: $white;
+
+        &:hover {
+            border: 1px solid $brand-green-light;
+            border-radius: 10px;
+        }
 
         h3 {
             color: $white;
