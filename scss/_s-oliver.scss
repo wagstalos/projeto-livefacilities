@@ -74,4 +74,11 @@
             }
         }
     }
+
+    @include responsive($mobile) {
+     
+        &__img {
+            display: none;
+        }
+    }
 }
