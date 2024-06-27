@@ -1,11 +1,8 @@
-var swiper2 = new Swiper(".mySwiper", {
+var swiper1 = new Swiper(".mySwiper", {
   spaceBetween: 10,
   freeMode: false,
   slidesPerView: 1.1,
 
-  //   autoplay: {
-  //     delay: 15000, // tempo em milissegundos entre os slides
-  //   },
   loop: false,
   navigation: true,
   pagination: {
