@@ -10,7 +10,7 @@ var swiper2 = new Swiper(".mySwiper", {
   navigation: true,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    clickable: false,
   },
   // Navigation arrows
   navigation: {

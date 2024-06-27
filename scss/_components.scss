@@ -37,6 +37,11 @@
 .text-center {
     text-align: center;
 }
+
+.sub-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
 canvas {
     display: block;
     vertical-align: bottom;
@@ -56,6 +61,10 @@ canvas {
 
 .d-flex {
     display: flex;
+}
+
+.align-center {
+    align-items: center;
 }
 
 /* Classes para margin */
