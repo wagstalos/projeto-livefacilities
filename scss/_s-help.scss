@@ -17,15 +17,62 @@
 
         p {
             font-size: 1.6rem;
+            padding: 10px;
         }
     }
 
     &__card {
-        width: calc(50% - 20px);
-        background-color: #e8e8e8;
-        padding: 20px;
-        margin: 20px 0 0 20px;
+        width: calc(80% - 20px);
         border-radius: 20px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 1.7rem;
+        transition: 0.4s;
+        border-radius: 8px;
+        font-weight: 500;
+    }
+
+    .active,
+    .accordion:hover {
+        background-color: $brand-main;
+        color: white;
+
+        &::after {
+            color: white;
+        }
+    }
+
+    .accordion:after {
+        content: "\002B";
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+
+    .active:after {
+        content: "\2212";
+        color: white;
+    }
+
+    .panel {
+        padding: 0 18px;
+        background-color: $white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border-radius: 10px;
     }
 
     @include responsive($mobile) {
@@ -37,11 +84,11 @@
         }
         &__card {
             width: 100%;
-            background-color: #e8e8e8;
-            padding: 20px;
-            margin: 0;
-            margin-bottom: $gutter * 3;
-            border-radius: 20px;
+            // background-color: #e8e8e8;
+            // padding: 20px;
+            // margin: 0;
+            // margin-bottom: $gutter * 3;
+            // border-radius: 20px;
         }
     }
 }
