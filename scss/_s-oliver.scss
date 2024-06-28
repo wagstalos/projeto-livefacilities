@@ -18,7 +18,7 @@
     }
 
     .banner {
-        background: #041020 url(../img/bg-oliver.png) no-repeat right top;
+        background: #041020 url(../img/bg-oliver.webp) no-repeat right top;
         background-size: cover;
         position: relative;
         padding: 50px;
@@ -76,7 +76,6 @@
     }
 
     @include responsive($mobile) {
-     
         &__img {
             display: none;
         }
