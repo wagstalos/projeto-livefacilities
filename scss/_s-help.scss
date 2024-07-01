@@ -47,13 +47,12 @@
         justify-content: space-between;
     }
 
-    .active,
-    .accordion:hover {
+    .active{
         background-color: $brand-main;
-        color: white;
+        color: $white;
 
         &::after {
-            color: white;
+            color: $white;
         }
     }
 
@@ -67,7 +66,7 @@
 
     .active:after {
         content: "\2212";
-        color: white;
+        color: $white;
     }
 
     .panel {
@@ -88,11 +87,6 @@
         }
         &__card {
             width: 100%;
-            // background-color: #e8e8e8;
-            // padding: 20px;
-            // margin: 0;
-            // margin-bottom: $gutter * 3;
-            // border-radius: 20px;
         }
     }
 }
