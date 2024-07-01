@@ -1,8 +1,8 @@
-$(window).on("load", function () {
-  $("body").removeClass("loading");
+window.addEventListener("load", function () {
+  document.body.classList.remove("loading");
 });
 
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function () {
   AOS.init();
 
   function scrollTarget() {
@@ -28,28 +28,52 @@ $(document).ready(function () {
     });
   }
 
-  $(".accordion-wrap").on("click", function () {
-    $(this).children().eq(1).slideToggle(300);
-    $(this).children().eq(0).toggleClass("accordion-no-bar");
-    $(this).siblings().find(".accordion-header").removeClass("accordion-gold");
-    $(this).siblings().find(".accordion-header .icon").removeClass("rotate-fa");
-    $(this).find(".accordion-header").toggleClass("accordion-gold");
-    $(this).find(".icon").toggleClass("rotate-fa");
+  var accordionWraps = document.querySelectorAll(".accordion-wrap");
+  accordionWraps.forEach(function (accordionWrap) {
+    accordionWrap.addEventListener("click", function () {
+      var accordionText = this.children[1];
+      var accordionHeader = this.children[0];
+      var allAccordionHeaders = document.querySelectorAll(".accordion-header");
+      var allIcons = document.querySelectorAll(".accordion-header .icon");
 
-    $(".accordion-wrap .accordion-text")
-      .not($(this).children().eq(1))
-      .slideUp(300);
+      if (accordionText) {
+        if (accordionText.style.display === "block") {
+          accordionText.style.display = "none";
+        } else {
+          accordionText.style.display = "block";
+        }
+      }
+
+      accordionHeader.classList.toggle("accordion-no-bar");
+      allAccordionHeaders.forEach(function (header) {
+        header.classList.remove("accordion-gold");
+      });
+      allIcons.forEach(function (icon) {
+        icon.classList.remove("rotate-fa");
+      });
+      this.querySelector(".accordion-header").classList.toggle(
+        "accordion-gold"
+      );
+      this.querySelector(".icon").classList.toggle("rotate-fa");
+
+      document
+        .querySelectorAll(".accordion-wrap .accordion-text")
+        .forEach(function (text) {
+          if (text !== accordionText) {
+            text.style.display = "none";
+          }
+        });
+    });
   });
 
   scrollTarget();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyBgElements = document.querySelectorAll(".lazy-image-background");
 
-document.addEventListener('DOMContentLoaded', function() {
-  const lazyBgElements = document.querySelectorAll('.lazy-image-background');
-  
-  lazyBgElements.forEach(el => {
-      const bgImg = el.getAttribute('data-bg');
-      el.style.backgroundImage = `url(${bgImg})`;
+  lazyBgElements.forEach((el) => {
+    const bgImg = el.getAttribute("data-bg");
+    el.style.backgroundImage = `url(${bgImg})`;
   });
 });
